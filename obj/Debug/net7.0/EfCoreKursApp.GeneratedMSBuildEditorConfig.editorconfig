@@ -9,41 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EfCoreKursApp
 build_property.RootNamespace = EfCoreKursApp
-build_property.ProjectDir = C:\Users\fatih\Desktop\ASP_PROJELER\EfCoreKursApp\
+build_property.ProjectDir = c:\Users\fatih\Desktop\ASP_PROJELER\EfCoreKursApp\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\fatih\Desktop\ASP_PROJELER\EfCoreKursApp
+build_property.MSBuildProjectDirectory = c:\Users\fatih\Desktop\ASP_PROJELER\EfCoreKursApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Home/Index.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Home/Privacy.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Ogrenci/Create.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Ogrenci/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Shared/Error.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Ogrenci/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/_ViewImports.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/_ViewStart.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Shared/_Layout.cshtml]
+[c:/Users/fatih/Desktop/ASP_PROJELER/EfCoreKursApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3hxo9e2lqc

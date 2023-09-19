@@ -1,5 +1,6 @@
 using EfCoreKursApp.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EfCoreKursApp.Controllers
 {
@@ -9,6 +10,10 @@ namespace EfCoreKursApp.Controllers
         public OgrenciController(DataContext context)
         {
             _context = context;
+        }
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Ogrenciler.ToListAsync());
         }
         public IActionResult Create()
         {
@@ -20,7 +25,7 @@ namespace EfCoreKursApp.Controllers
         {
             _context.Ogrenciler.Add(model);
             await _context.SaveChangesAsync();
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index");
         }
     }
 }

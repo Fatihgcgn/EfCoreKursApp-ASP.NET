@@ -24065,6 +24065,11 @@
       "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\Ogrenci\\Create.cshtml",
       "TargetPath": "Views\\Ogrenci\\Create.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\Ogrenci\\Index.cshtml",
+      "TargetPath": "Views\\Ogrenci\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }
