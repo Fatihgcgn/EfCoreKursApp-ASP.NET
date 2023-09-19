@@ -24070,6 +24070,11 @@
       "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\Ogrenci\\Index.cshtml",
       "TargetPath": "Views\\Ogrenci\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\Ogrenci\\Edit.cshtml",
+      "TargetPath": "Views\\Ogrenci\\Edit.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }
