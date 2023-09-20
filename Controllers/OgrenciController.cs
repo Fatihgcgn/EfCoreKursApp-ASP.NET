@@ -99,6 +99,7 @@ namespace EfCoreKursApp.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete([FromForm]int id)
         {
             var ogrenci = await _context.Ogrenciler.FindAsync(id);
