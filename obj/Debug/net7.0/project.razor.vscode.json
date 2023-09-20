@@ -24100,6 +24100,16 @@
       "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\Kurs\\Delete.cshtml",
       "TargetPath": "Views\\Kurs\\Delete.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\KursKayit\\Create.cshtml",
+      "TargetPath": "Views\\KursKayit\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\fatih\\Desktop\\ASP_PROJELER\\EfCoreKursApp\\Views\\KursKayit\\Index.cshtml",
+      "TargetPath": "Views\\KursKayit\\Index.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

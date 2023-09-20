@@ -12,7 +12,7 @@ namespace EfCoreKursApp.Controllers
             _context = context;
         }
 
-         public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var kurslar = await _context.Kurslar.ToListAsync();
             return View(kurslar);
@@ -51,23 +51,23 @@ namespace EfCoreKursApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id,Kurs model)
+        public async Task<IActionResult> Edit(int id, Kurs model)
         {
             if (id != model.KursId)
             {
                 return NotFound();
             }
 
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 try
                 {
                     _context.Update(model);
                     await _context.SaveChangesAsync();
                 }
-                catch(DbUpdateException)
+                catch (DbUpdateException)
                 {
-                    if(!_context.Ogrenciler.Any(o => o.OgrenciId == model.KursId))
+                    if (!_context.Ogrenciler.Any(o => o.OgrenciId == model.KursId))
                     {
                         return NotFound();
                     }
@@ -85,14 +85,14 @@ namespace EfCoreKursApp.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var kurs = await _context.Kurslar.FindAsync(id);
 
-            if(kurs == null)
+            if (kurs == null)
             {
                 return NotFound();
             }
@@ -102,10 +102,10 @@ namespace EfCoreKursApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete([FromForm]int id)
+        public async Task<IActionResult> Delete([FromForm] int id)
         {
             var kurs = await _context.Kurslar.FindAsync(id);
-            if(kurs == null)
+            if (kurs == null)
             {
                 return NotFound();
             }
