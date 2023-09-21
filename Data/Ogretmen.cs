@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace EfCoreKursApp.Data
 {
@@ -10,6 +11,10 @@ namespace EfCoreKursApp.Data
         public string? Soyad { get; set; }
         public string? Eposta { get; set; }
         public string? Telefon { get; set; }
+
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = false)]
         public DateTime BaslamaTarihi { get; set; }
         public ICollection<Kurs> Kurslar { get; set; } = new List<Kurs>();
     }
