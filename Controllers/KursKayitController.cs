@@ -31,7 +31,7 @@ namespace EfCoreKursApp.Controllers
             model.KayitTarihi = DateTime.Now;
             _context.KursKayitlari.Add(model);
             await _context.SaveChangesAsync();
-            return View("Index");
+            return RedirectToAction("Index");
         }
     }
 }
