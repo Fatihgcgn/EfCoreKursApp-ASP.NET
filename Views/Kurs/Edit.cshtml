@@ -2,7 +2,9 @@
 
 <h2>Kurs Güncelleme</h2>
 <hr>
-<form asp-controller="Kurs" asp-action="Edit" method="post">
+<div class="row">
+    <div class="col-8">
+        <form asp-controller="Kurs" asp-action="Edit" method="post">
     <input type="hidden" asp-for="KursId">
     <div class="mb-3">
         <label asp-for="Baslik" class="form-label">Kurs Adı</label>
@@ -12,3 +14,15 @@
     <button type="submit" class="btn btn-secondary">Kaydet</button>
     
 </form>
+    </div>
+    <div class="col-4">
+        <h4>Ögrenciler</h4>
+        <hr>
+        <ul>
+            @foreach(var item in @Model.KursKayitlari)
+            {
+                <li>@item.Ogrenci.AdSoyad</li>
+            }
+        </ul>
+    </div>
+</div>
