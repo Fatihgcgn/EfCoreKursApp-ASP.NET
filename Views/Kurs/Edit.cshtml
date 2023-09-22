@@ -5,9 +5,10 @@
 <div class="row">
     <div class="col-8">
         <form asp-controller="Kurs" asp-action="Edit" method="post">
+            <div asp-validation-summary="All"></div>
             <input type="hidden" asp-for="KursId">
             <div class="mb-3">
-                <label asp-for="Baslik" class="form-label">Kurs Adı</label>
+                <label asp-for="Baslik" class="form-label"></label>
                 <input asp-for="Baslik" class="form-control">
             </div>
             <div class="mb-3">
@@ -22,7 +23,7 @@
         </form>
     </div>
     <div class="col-4">
- <h4>Ögrenciler</h4>
+        <h4>Ögrenciler</h4>
         <hr>
         <ul>
             @foreach (var item in @Model.KursKayitlari)

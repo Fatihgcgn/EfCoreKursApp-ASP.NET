@@ -3,6 +3,7 @@ using EfCoreKursApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace EfCoreKursApp.Controllers
 {
@@ -27,17 +28,23 @@ namespace EfCoreKursApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Kurs model)
+        public async Task<IActionResult> Create(KursViewModel model)
         {
-            _context.Kurslar.Add(model);
-            await _context.SaveChangesAsync();
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _context.Kurslar.Add(new Kurs() { KursId = model.KursId, Baslik = model.Baslik, OgretmenId = model.OgretmenId });
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
+            return View(model);
+
         }
 
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
@@ -45,7 +52,7 @@ namespace EfCoreKursApp.Controllers
             var kurs = await _context
                         .Kurslar
                         .Include(k => k.KursKayitlari)
-                        .ThenInclude(k=> k.Ogrenci)
+                        .ThenInclude(k => k.Ogrenci)
                         .Select(k => new KursViewModel
                         {
                             KursId = k.KursId,
@@ -55,12 +62,12 @@ namespace EfCoreKursApp.Controllers
                         })
                         .FirstOrDefaultAsync(k => k.KursId == id);
 
-            if(kurs == null) 
+            if (kurs == null)
             {
                 return NotFound();
             }
 
-            ViewBag.Ogretmenler =new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
+            ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
 
             return View(kurs);
         }
@@ -94,7 +101,7 @@ namespace EfCoreKursApp.Controllers
                 }
                 return RedirectToAction("Index");
             }
-
+            ViewBag.Ogretmenler = new SelectList(await _context.Ogretmenler.ToListAsync(), "OgretmenId", "AdSoyad");
             return View(model);
         }
 
