@@ -55,6 +55,7 @@ namespace EfCoreKursApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Ogretmen model)
         {
+
             if (id != model.OgretmenId)
             {
                 return NotFound();
@@ -77,11 +78,14 @@ namespace EfCoreKursApp.Controllers
                     {
                         throw;
                     }
+
                 }
                 return RedirectToAction("Index");
             }
 
             return View(model);
+
+            
         }
     }
 }
